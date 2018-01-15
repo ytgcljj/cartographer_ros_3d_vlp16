@@ -51,4 +51,5 @@
   </include>
   <include file="$(find imu)/launch/imu.launch">
    </include>
+   <node pkg="tf" type="static_transform_publisher" name="laser_to_base_v16" args="0.0 0.0 0.0 0.0 0.0 0.0  /base_link /velodyne 80" />
 </launch>
