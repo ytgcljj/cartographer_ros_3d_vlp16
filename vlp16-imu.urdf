@@ -22,7 +22,7 @@
     <color rgba="0.2 0.2 0.2 1" />
   </material>
 
-  <link name="map">
+  <link name="imu_link">
     <visual>
       <origin xyz="0.0 0.0 0.0" />
       <geometry>
@@ -44,9 +44,9 @@
 
   <link name="base_link" />
 
-  <joint name="map_joint" type="fixed">
+  <joint name="imu_link_joint" type="fixed">
     <parent link="base_link" />
-    <child link="map" />
+    <child link="imu_link" />
     <origin xyz="0 0 0" rpy="0 0 0" />
   </joint>
 
